@@ -1,0 +1,23 @@
+listen = ":7006"
+
+[monitor]
+namespace = "umbrella"
+subsystem = "email"
+
+[DirectMail]
+format = "JSON"
+version = "2015-11-23"
+accessKeyId = "LTAIvUAUos5XypQv"
+accessKeySecret = "t4cjImTY1fngRKYyiV2WYVrfIhGPsb"
+signatureMethod = "HMAC-SHA1"
+signatureVersion = "1.0"
+regionId = ""
+AccountName = "chenjun@umbrellacs.top"
+AddressType = "1"
+ReplyToAddress = "876765378@qq.com"
+FromAlias = "保护伞"
+ClickTrace = "0"
+timeout = "5s"
+
+[http]
+listen = ":7007"

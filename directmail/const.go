@@ -1,0 +1,24 @@
+package directmail
+
+const (
+	DIRECT_MAIL_API_HOST = "http://dm.aliyuncs.com"
+)
+
+type DIRECT_MAIL_API_TYPE int
+
+const (
+	EMAIL_SEND_SINGLE DIRECT_MAIL_API_TYPE = iota
+	EMAIL_SEND_GROUP
+)
+
+const (
+	DIRECT_MAIL_RESULT_CODE_UNSUPPORTED_RESP      = -2
+	DIRECT_MAIL_RESULT_CODE_NETWORK_ERROR         = -1
+	DIRECT_MAIL_RESULT_TESTMODE_UNSUPPORTED_ERROR = -3
+
+	DIRECT_MAIL_RESULT_CODE_OK = 0
+)
+
+const (
+	SingleSendMail = "SingleSendMail"
+)

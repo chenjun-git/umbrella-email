@@ -1,0 +1,21 @@
+package: github.com/chenjun-git/umbrella-email
+import: 
+- package: github.com/go-sql-driver/mysql
+- package: github.com/golang/protobuf
+- package: github.com/go-chi/chi
+- package: github.com/go-chi/render
+- package: github.com/BurntSushi/toml
+- package: github.com/json-iterator/go
+- package: github.com/stretchr/testify/assert
+- package: golang.org/x/net
+- package: google.golang.org/grpc
+- package: github.com/prometheus/client_golang
+- package: github.com/dchest/captcha
+- package: github.com/asaskevich/govalidator
+- package: github.com/nyaruka/phonenumbers
+- package: github.com/ahmetb/go-linq
+- package: github.com/json-iterator/go
+- package: github.com/modern-go/concurrent
+- package: github.com/chenjun-git/umbrella-common
+  version: adb38e0b9e479c047e8d5abe40768ca7757f0d6a
+- package: github.com/satori/go.uuid

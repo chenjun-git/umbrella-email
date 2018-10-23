@@ -1,0 +1,14 @@
+syntax = "proto3";
+package pb;
+
+message EmailSendSingleReq{
+	string email = 1;
+	string verify_code = 2;
+}
+
+message EmailSendSingleResp{
+}
+
+service Email{
+	rpc SendSignupVerifyCode(EmailSendSingleReq) returns (EmailSendSingleResp) {}
+}
