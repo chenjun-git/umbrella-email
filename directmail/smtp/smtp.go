@@ -3,7 +3,17 @@ package smtp
 import (
 	"net/smtp"
 	"strings"
+
+	"github.com/chenjun-git/umbrella-email/common"
 )
+
+const (
+	SmtpHost = "smtpdm.aliyun.com:25"
+)
+
+func SendMail(to, subject, body string) error {
+	return SendToMail(common.Config.DirectMail.AccountName, "CpOodsf0998ads", SmtpHost, to, subject, body, "html", common.Config.DirectMail.ReplyToAddress)
+}
 
 func SendToMail(user, password, host, to, subject, body, mailtype, replyToAddress string) error {
 	// hp := strings.Split(host, ":")
